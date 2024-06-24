@@ -1,0 +1,162 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport">
+	<title>	Customer Feedback System</title> 
+	<style>
+
+	body{
+		margin: 0; 
+	display: flex; 
+	align-items: center; 
+	justify-content: space-around; 
+	flex-direction: column; 
+	height: 75vh; 
+	background-color: #bde5d2; 
+	font-family: 'Poppins', sans-serif; 
+
+} 
+.textup { 
+	text-align: center; 
+	color: rgb(11, 118, 11); 
+	font-weight: 700; 
+} 
+
+i { 
+	margin-right: 2px; 
+} 
+
+.form-box { 
+	background-color: #fff; 
+	box-shadow: 0 0 10px rgba(36, 67, 40, 0.8); 
+	padding: 15px; 
+	border-radius: 8px; 
+	width: 1000px; 
+} 
+
+form { 
+	max-width: 400px; 
+	margin: 0 auto; 
+} 
+
+.radio-group { 
+	display: flex; 
+	margin-bottom: 16px; 
+} 
+
+input[type="radio"] { 
+	margin-right: 8px; 
+} 
+
+label { 
+	display: block; 
+	margin-bottom: 8px; 
+	font-size: 17px; 
+	color: green; 
+	font-weight: 600; 
+} 
+
+input, 
+textarea { 
+	width: 100%; 
+	padding: 8px; 
+	margin-bottom: 12px; 
+	box-sizing: border-box; 
+	border-radius: 10px; 
+
+} 
+
+button { 
+	background-color: #368b44; 
+	color: #fff; 
+	padding: 10px; 
+	border: none; 
+	border-radius: 25px; 
+	cursor: pointer; 
+	width: 100%; 
+	font-size: 15px; 
+	transition: .2s linear; 
+} 
+
+button:hover { 
+	background-color: #0a6808; 
+	border: none; 
+	transform: translateY(-10px); 
+} 
+
+h1 { 
+	color: green; 
+}
+
+	</style>
+</head> 
+
+<body> 
+	
+	<h1>Feedback Form</h1> 
+	
+	<div class="form-box"> 
+		<div class="textup"> 
+			<i class="fa fa-solid fa-clock"></i> 
+		</div> 
+		<form> 
+			<label for=" Customer"> 
+				<i class="fa-solid fa-name"></i> 
+				 Customer Name
+			</label> 
+			<input type="text" id="name"
+				name="Customer name" required>
+			<label for="contact information"> 
+				<i class="fa-solid fa-phone"></i> 
+				contact No 
+			</label> 
+			<input type="tel" id="phone"
+				name="phone" required> 
+
+			<label> 
+				<i class="fa-solid fa-face-smile"></i> 
+				Do you satisfy with our service? 
+			</label> 
+			<div class="radio-group"> 
+				<input type="radio" id="yes"
+					name="satisfy" value="yes" checked> 
+				<label for="1"> 1 star rating</label> 
+
+				<input type="radio" id="no"
+					name="satisfy" value="no"> 
+				<label for="2">2 star rating</label> 
+				<input type="radio" id="yes"
+					name="satisfy" value="yes" checked> 
+				<label for="3"> 3 star rating</label> 
+
+				<input type="radio" id="no"
+					name="satisfy" value="no"> 
+				<label for="4">4 star rating</label> 
+				<input type="radio" id="yes"
+					name="satisfy" value="yes" checked> 
+				<label for="5"> 5 star rating</label>
+
+				<button type="submit"> 
+					Post  your Ratings<a href="./feedback display page.html"></a>
+
+
+			</div> 
+
+			<label for="msg"> 
+				<i class="fa-solid fa-comments"
+				style="margin-right: 3px;"></i> 
+				Write your Feedback: 
+			</label> 
+			<textarea id="msg" name="msg"
+					rows="4" cols="10" required> 
+			</textarea> 
+			<button type="submit"> <a1 href="./feedback display page.html"></a1>
+				Submit  your Feedback 
+			</button> 
+		</form> 
+	</div> 
+</body> 
+
+</html>
